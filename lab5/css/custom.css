@@ -1,0 +1,219 @@
+:root {
+	--main-color: #9EA3FF;
+	--link-text: #4B50B3;
+	--nav-bar: #B39A39;
+	--last-col:  #FFE685;
+	--figure-col: #848AFF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	text-indent: 30px;
+}
+
+body {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	/*
+	 * Image from: 
+	 * https://www.toptal.com/designers/subtlepatterns/
+	*/
+	font-family: "Times New Roman";
+	background-image: url("../img/beige-tiles.png");
+}
+
+article {
+	background-color: var(--main-color);
+	width: 70%;
+	margin-left: 15%;
+	margin-right:  15%;
+	margin-top: 0;
+}
+
+article h1 {
+	margin: 0;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+nav {
+	background-color: var(--nav-bar);
+	padding: 0;
+	margin: 0;
+	height: 60px;
+}
+
+nav ul li {
+	float: left;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 18px;
+	animation-name: slide;
+	animation-duration: 1s;
+	animation-delay: 0;
+	transition: transform 1s;
+}
+@keyframes slide {
+	0%   {transform: translate(0px);}
+	25%  {transform: translate(30px);}
+	75%  {transform: translate(-30px);}
+	100% {transform: translate(0px);}
+}
+
+nav ul li:hover {
+	transform: scale(1.5);
+}
+
+nav ul li a {
+	color: var(--link-text);
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: red;
+}
+
+figure {
+	background-color: var(--figure-col);
+	border: 2px black solid;
+	border-radius: 25px;
+	margin: 5px;
+}
+
+figure img {
+	border-radius: 25px;
+}
+
+figcaption {
+	font-size: small;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+table {
+	border: black 2px solid;
+	border-collapse: collapse;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+table th {
+	font-size: large;
+}
+
+table td {
+	border: gray 1px dashed;
+}
+
+#table-cap {
+	font-size:  large;
+	font-weight:  bold;
+}
+
+article ul {
+	margin: 0;
+	padding: 0;
+}
+
+article ul li {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+fieldset {
+	margin-top: 10px;
+	text-align: left;
+	width: 50%;
+	float: left;
+}
+
+article li:nth-child(odd) {
+	background-color: green;
+}
+
+article li:nth-child(even) {
+	background-color:  lightgreen;
+}
+
+table tr:nth-child(odd) {
+	background-color: green;
+}
+
+table tr:nth-child(even) {
+	background-color:  lightgreen;
+}
+
+a:hover {
+	color: lightgreen;
+}
+
+.active {
+	color: green;
+}
+
+.portrait {
+	float: right;
+	width: 40%;
+	height: 315px;
+}
+
+.form-inputs {
+	width: 100%;
+	margin-top: 335px;
+}
+
+#sub {
+	margin-bottom: 25px;
+}
+
+#text-shadow {
+	text-shadow: 0 0 4px green;
+}
+
+#gradient {
+	background: radial-gradient(var(--main-color), var(--nav-bar))
+}
+
+#box-shadow {
+	box-shadow: 3px 3px 5px black;
+}
+
+.flex-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-left {
+	flex: 0 1 45%;
+	margin-right: 5%;
+	margin-top:  25px;
+	margin-left:  2.5%;
+}
+
+.flex-right {
+	flex: 0 1 45%;
+	margin-right: 2.5%;
+}
+
+.grid-content {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.grid-content > div {
+	margin-left: 3%;
+	margin-right: 3%;
+}

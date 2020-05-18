@@ -1,0 +1,345 @@
+:root {
+	--nav-bar:  #61CC8B;
+	--text:     #62A7E3;
+    --active:   #9A5DD9;
+    --nav-act:  #e6d3b5;
+    --nav-link: #4c5a70;
+    --nav-box:  #D9AE5D;
+    --logo:     #663c45;
+    --form:     #F0615B;
+    --sub-hov:  #DEF05B;
+    --sub:      #B35FFA;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--text);
+    overflow-x: hidden;
+    font-size: medium;
+}
+
+article {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-bar);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    padding: 25px;
+    margin: 15px 0 0 25px;
+    background-color: var(--nav-box);
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--nav-link);
+}
+
+a:hover {
+    color: green;
+}
+
+.active {
+    background-color: var(--nav-act);
+}
+
+.active > a {
+    color: var(--active);
+}
+
+.error {
+    background-color: red;
+    border: 1px solid black;
+    width: 75%;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.success {
+    background-color: green;
+    border: 1px solid black;
+    width: 75%;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.post {
+    background-color: var(--form);
+    width: 75%;
+    margin: 100px auto;
+    height: auto;
+}
+
+.post-img {
+    width: 75%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+#logo {
+    float: left;
+}
+
+.logo-text {
+    padding-top: 15px;
+    margin: 0px;
+    padding-left: 20px;
+    color: var(--logo);
+    font-family: Futura, sans-serif;
+}
+
+#logo-img {
+    float: left;
+}
+
+.text {
+	height:auto;
+	background-color: var(--text);
+	font-size:24px;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 100px auto;
+    padding: 0;
+    width: 75%;
+    background-color: var(--form);
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.field-content {
+    margin-top: 50px;
+}
+
+.server-msg {
+    margin-top: 100px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+input { 
+    display: block;
+    margin: 5px auto;
+}
+
+textarea {
+    display: block;
+    margin: 5px auto;
+}
+
+legend {
+    position: relative;
+    font-size: large;
+    margin: 0 auto;
+    top: 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: large;
+}
+
+#sub {
+    width: 400px;
+    background-color: var(--sub);
+    border: none;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#sub:hover {
+    background-color: var(--sub-hov);
+}
+
+.snow {
+    background-color: #526e9b;
+    background-image: url('../img/snow.png');
+    filter: blur(1px);
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: snowfall 20s linear infinite;
+}
+@keyframes snowfall {
+    from { background-position: 0 0; }
+    to   { background-position: 0 1000px; }
+}
+
+.rain {
+    background-color: #3c704b;
+    background-image: url('../img/rain.png');
+    filter: blur(1px);
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: rain 40s linear infinite;
+}
+@keyframes rain {
+    from { background-position: 0 0; }
+    to   { background-position: 0 20000px; }
+}
+
+.water {
+    background-color: #256d7b;
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.boat {
+    margin-top: 100px;
+    animation: boat 40s linear infinite;
+}
+@keyframes boat {
+    from { margin-left: -25%; }
+    to   { margin-left:  110%; }
+}
+
+.leaves {
+    background-color: #bab986;
+    background-image: url('../img/fall.png');
+
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: snowfall 20s linear infinite;
+}
+@keyframes leaves {
+    from { background-position: 0 0; }
+    to   { background-position: 0 1000px; }
+}
+
+
+@media all and (max-width: 1155px) {
+    body {
+        font-size: large;
+    }
+
+    nav {
+        position: static;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #logo {
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-text {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    #logo-img {
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+    }
+    textarea {
+        width: 100%;
+    }
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .server-msg {
+        margin: 0px;
+    }
+
+    .post {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .post-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+}

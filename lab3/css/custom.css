@@ -1,0 +1,51 @@
+ul {
+	list-style-type: none;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+article {
+	width: 70%;
+	padding-left: 15%;
+	padding-right:  15%;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+nav {
+	background-color: gray;
+	padding: 0;
+	margin: 0;
+	height: 60px;
+}
+
+nav ul li {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 18px;
+}
+
+nav ul li a {
+	color: red;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: blue;
+}
+
+.active {
+	color: green;
+}

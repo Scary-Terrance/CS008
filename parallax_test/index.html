@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.snow {
+    background-color: #526e9b;
+    background-image: url('snow.png');
+    filter: blur(1px);
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: snowfall 20s linear infinite;
+}
+@keyframes snowfall {
+    from { background-position: 0 0; }
+    to   { background-position: 0 1000px; }
+}
+
+.rain {
+    background-color: #3c704b;
+    background-image: url('rain.png');
+    filter: blur(1px);
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: rain 40s linear infinite;
+}
+@keyframes rain {
+    from { background-position: 0 0; }
+    to   { background-position: 0 20000px; }
+}
+
+.water {
+    background-color: #256d7b;
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.boat {
+    margin-top: 100px;
+    animation: boat 40s linear infinite;
+}
+@keyframes boat {
+    from { margin-left: -25%; }
+    to   { margin-left:  110%; }
+}
+
+.leaves {
+    background-color: #bab986;
+    background-image: url('fall.png');
+
+    margin: 0px;
+    padding: 0px;
+
+    height: 500px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+    animation: snowfall 20s linear infinite;
+}
+@keyframes leaves {
+    from { background-position: 0 0; }
+    to   { background-position: 0 1000px; }
+}
+</style>
+</head>
+    <body>
+    <nav></nav>
+    <div class="snow"></div>
+
+    <div style="height:500px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="rain"></div>
+
+    <div style="height:500px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="water"><img class="boat" src="boat.png" alt="A Sailboat"></div>
+
+    <div style="height:500px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="leaves"></div>
+
+    <div style="height:500px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    </body>
+</html>
